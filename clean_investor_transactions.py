@@ -16,6 +16,14 @@ txn = txn[txn['amount_inr'] > 0]
 
 txn = txn.drop_duplicates()
 
+valid_kyc = ['Verified', 'Pending']
+
+invalid_kyc = txn[
+    ~txn['kyc_status'].isin(valid_kyc)
+]
+
+print("Invalid KYC Records:", len(invalid_kyc))
+
 txn.to_csv(
     "data/processed/clean_investor_transactions.csv",
     index=False
