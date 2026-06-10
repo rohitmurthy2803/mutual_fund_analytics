@@ -6,11 +6,7 @@ risk = input("Enter Risk Appetite (Low/Moderate/High): ").strip().title()
 
 filtered = perf[perf['risk_grade'] == risk]
 
-recommendations = (
-    filtered
-    .sort_values('sharpe_ratio', ascending=False)
-    .head(3)
-)
+recommendations = (filtered.sort_values('sharpe_ratio', ascending=False).head(3))
 
 print("\nTop 3 Recommended Funds\n")
 
