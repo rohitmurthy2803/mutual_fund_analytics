@@ -1,3 +1,13 @@
+"""
+Investor transactions cleaning script.
+
+Tasks:
+- Validate transaction records
+- Standardize transaction types
+- Convert transaction dates
+- Validate investment amounts
+- Export cleaned transaction dataset
+"""
 import pandas as pd
 
 txn = pd.read_csv("data/raw/08_investor_transactions.csv")

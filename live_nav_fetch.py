@@ -1,3 +1,12 @@
+"""
+Live NAV data extraction script.
+
+Tasks:
+- Fetch latest NAV data from AMFI source
+- Parse API response
+- Store NAV records for further analysis
+- Update NAV history dataset
+"""
 import requests
 import pandas as pd
 import os

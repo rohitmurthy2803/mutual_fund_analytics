@@ -1,3 +1,13 @@
+"""
+Scheme performance data cleaning script.
+
+Tasks:
+- Validate return metrics
+- Validate risk metrics
+- Check expense ratios
+- Handle missing values
+- Export cleaned scheme performance dataset
+"""
 import pandas as pd
 
 perf = pd.read_csv("data/raw/07_scheme_performance.csv")

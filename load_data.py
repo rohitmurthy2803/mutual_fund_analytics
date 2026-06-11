@@ -1,3 +1,12 @@
+"""
+Database loading script.
+
+Tasks:
+- Connect to SQLite database
+- Load cleaned datasets
+- Insert records into database tables
+- Verify successful data loading
+"""
 import pandas as pd
 from sqlalchemy import create_engine
 

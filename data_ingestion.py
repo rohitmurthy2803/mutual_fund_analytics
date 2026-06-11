@@ -1,3 +1,12 @@
+"""
+Data ingestion script for the Mutual Fund Analytics project.
+
+Tasks:
+- Read all raw datasets
+- Validate file availability
+- Perform initial schema checks
+- Prepare data for cleaning and processing
+"""
 import pandas as pd
 import os
 

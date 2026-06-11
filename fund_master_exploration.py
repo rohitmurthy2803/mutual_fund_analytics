@@ -1,6 +1,14 @@
+"""
+Fund master exploratory analysis script.
+
+Tasks:
+- Explore fund categories
+- Analyse AMC distribution
+- Review fund attributes
+- Generate summary statistics
+"""
 import pandas as pd
 
-# Load fund master
 df = pd.read_csv('data/raw/01_fund_master.csv')
 nav = pd.read_csv('data/raw/02_nav_history.csv')
 
